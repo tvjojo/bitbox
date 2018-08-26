@@ -1,0 +1,171 @@
+ 
+body{
+	 background: #FFFFCC;
+    font-size:16px;
+    font-family:'Microsoft Yahei'; Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*  基本的样式设定*/
+ul, ol, dl { /* 由于浏览器之间的差异，最佳做法是在列表中将填充和边距都设置为零。为了保持一致，您可以在此处指定需要的数值，也可以在列表所包含的列表项（LI、DT 和 DD）中指定需要的数值。请注意，除非编写一个更为具体的选择器，否则您在此处进行的设置将会层叠到 .nav 列表。 */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* 删除上边距可以解决边距会超出其包含的 div 的问题。剩余的下边距可以使 div 与后面的任何元素保持一定距离。 */
+	padding-right: 15px;
+	padding-left: 15px; /* 向 div 内的元素侧边（而不是 div 自身）添加填充可避免使用任何方框模型数学。此外，也可将具有侧边填充的嵌套 div 用作替代方法。 */
+}
+
+a img { /* 此选择器将删除某些浏览器中显示在图像周围的默认蓝色边框（当该图像包含在链接中时） */
+	border: none;
+}
+
+/* ~~ 站点链接的样式必须保持此顺序，包括用于创建悬停效果的选择器组在内。 ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* 除非将链接设置成极为独特的外观样式，否则最好提供下划线，以便可从视觉上快速识别 */
+}
+
+/*输入框样式*//*
+.input-text { position: relative; font-size: 1.1em; }
+.input-text b { display: block; float: left; width: 6m; }
+.input-text span { position: absolute; left: 6.2em; right: 0em; }
+.input-text input[type=text],
+.input-text textarea,
+.input-text input[type=password] { border: none; width: 100%; padding: 0; }
+.input-text textarea { width: 100%; margin-top: 0.6em; height: 6em; }
+/*带验证码*/
+.input-text.code span { right: 6em; }
+.input-text.code a,
+button { text-align: center; font-size: 0.8em; padding: 0.2em 0.4em; border-radius: 5px; display: block; }
+.input-text img { width: 3em; height: auto; }
+
+/*  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* 顶部设计*/
+
+.headtop{   
+	font-size: 12px; color:#666;
+	background: #FFCC00;
+	margin-left:0px;
+    text-decoration:none;}
+    
+.headtop.ul{
+    width:700;  color:#666;
+    }
+    
+.top{  
+ 
+	 left:0px;
+     color:#666;
+     margin: 0px;
+     padding: 0px;
+     margin-left:1px;
+    text-decoration:none;
+}
+
+.top-nav{  
+  font-size: 18px; 
+	left:0px;
+	float:left;
+    padding:0 50px;
+ 
+    background-color:#CCCCCC;
+    margin-top:0px;
+    margin-left:0px;
+}
+
+/* ~~ 此固定宽度容器包含其它 div ~~ */
+.container {float:left;
+	width: 960px;
+	background: #FFFF99;
+	margin: 0 auto; /* 侧边的自动值与宽度结合使用，可以将布局居中对齐 */
+}
+ 
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background: #EADCAE;
+	padding-bottom: 10px;
+}
+
+/* ~~ 标题未指定宽度。它将扩展到布局的完整宽度。标题包含一个图像占位符，该占位符应替换为您自己的链接徽标 ~~ */
+.header {
+	 
+}
+.headright{ float: right;width:762px; 
+	padding:1px 15px 2px 1px; 
+		background: #EADCAE;
+}
+.bodybox{ width:781px;  padding:1px 15px 2px 220px;    margin:0 auto; margin-top:2px; font-family:"宋体",Arial, Helvetica, sans-serif;}
+
+.content { width:780px;   padding:1px 5px 2px 1px;  }
+
+
+.contenttop {left: 5px;margin-top:2px; }
+
+.contentmin { left: 4px;margin-top:2px; 
+	
+}
+
+/* ~~ 此分组的选择器为 .content 区域中的列表提供了空间 ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 20px; /* 此填充反映上述标题和段落规则中的右填充。填充放置于下方可用于间隔列表中其它元素，置于左侧可用于创建缩进。您可以根据需要进行调整。 */
+}
+
+/* ~~ 导航列表样式（如果选择使用预先创建的 Spry 等弹出菜单，则可以删除此样式） ~~ */
+ul.nav {
+	list-style: none; /* 这将删除列表标记 */
+	border-top: 1px solid #666; /* 这将为链接创建上边框 – 使用下边框将所有其它项放置在 LI 中 */
+	margin-bottom: 15px; /* 这将在下面内容的导航之间创建间距 */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* 这将创建按钮间隔 */
+}
+ul.nav a, ul.nav a:visited { /* 对这些选择器进行分组可确保链接即使在访问之后也能保持其按钮外观 */
+	padding: 5px 5px 5px 15px;
+	display: block; /* 这将为链接赋予块属性，使其填满包含它的整个 LI。这样，整个区域都可以响应鼠标单击操作。 */
+	width: 160px;  /*此宽度使整个按钮在 IE6 中可单击。如果您不需要支持 IE6，可以删除它。请用侧栏容器的宽度减去此链接的填充来计算正确的宽度。 */
+	text-decoration: none;
+	background: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* 这将更改鼠标和键盘导航的背景和文本颜色 */
+	background: #ADB96E;
+	color: #FFF;
+}
+
+
+
+
+
+
+/* ~~ 脚注 ~~ */
+.footer {
+	padding: 10px 46;
+	background: #CCC49F;
+	position: relative;/* 这可以使 IE6 hasLayout 以正确方式进行清除 */
+	clear: both; /* 此清除属性强制 .container 了解列的结束位置以及包含列的位置 */
+}
+
+/* ~~ 其它浮动/清除类 ~~ */
+.fltrt {  /* 此类可用于在页面中使元素向右浮动。浮动元素必须位于其在页面上的相邻元素之前。 */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* 此类可用于在页面中使元素向左浮动。浮动元素必须位于其在页面上的相邻元素之前。 */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* 如果从 #container 中删除或移出了 #footer，则可以将此类放置在 <br /> 或空 div 中，作为 #container 内最后一个浮动 div 之后的最终元素 */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+
+
+
+
+
