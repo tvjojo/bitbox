@@ -1,18 +1,28 @@
 <?php
-/* Smarty version 3.1.30, created on 2018-08-25 17:54:38
+/**
+ *   ============================================================================
+ *  Copyright (c) 2017. 本软件系统由北天团队与投缘互联共同开发，对于非商业用途
+ *  的代码使用完全免费，而对商业用户经过我方授权后也可免费使用，但所有用户不得任意破坏
+ *  我们设计的产品结构，也不得使用该软件做为非法用途.如果商业用户希望获得一些平台型的支
+ *  持，以及获得我方各类接口的支持，也可联系我方购买更丰富的支持.
+ *  ** http://bitbox.5viv.com    EMAIL:tvjojo@5viv.com   QQ群：229487894
+ *   ============================================================================
+ */
+
+/* Smarty version 3.1.30, created on 2018-08-26 15:31:15
   from "E:\web\bitbox\view\template\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5b8197ded35e81_55062269',
+  'unifunc' => 'content_5b82c7c3146163_74793377',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8b2dccd649c57dc697cd6feced8731d0455f596f' => 
     array (
       0 => 'E:\\web\\bitbox\\view\\template\\index.html',
-      1 => 1508603391,
+      1 => 1535286563,
       2 => 'file',
     ),
     '1ca3c8dc31407623108ef9ea2513509f017d3e6f' => 
@@ -24,7 +34,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     '013078e5cfd24baed3f54942ec3f3b13aa4056a8' => 
     array (
       0 => 'E:\\web\\bitbox\\view\\template\\left.html',
-      1 => 1508598457,
+      1 => 1535286564,
       2 => 'file',
     ),
     'c3080f1471efe971b64b63da97de01402c853363' => 
@@ -36,14 +46,17 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 66,
 ),true)) {
-function content_5b8197ded35e81_55062269 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b82c7c3146163_74793377 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <!--
-  ~ Copyright (c) 2017. 本软件系统由北天团队与投缘互联团队共同开发，对于非商业用途
-  ~ 的代码使用完全免费，而对商业用户经过我方授权后也可免费使用，但所有用户不得任意破坏
-  ~ 我们设计的产品结构，也不得使用该软件做为非法用途.如果商业用户希望获得一些平台型的支
-  ~ 持，以及获得我方各类接口的支持，也可联系我方购买更丰富的支持. 
+  ~   ============================================================================
+  ~  Copyright (c) 2017. 本软件系统由北天团队与大视线团队共同开发，对于非商业用途
+  ~  的代码使用完全免费，而对商业用户经过我方授权后也可免费使用，但所有用户不得任意破坏
+  ~  我们设计的产品结构，也不得使用该软件做为非法用途.如果商业用户希望获得一些平台型的支
+  ~  持，以及获得我方各类接口的支持，也可联系我方购买更丰富的支持.
+  ~  ** http://bitbox.5viv.com    EMAIL:tvjojo@5viv.com   QQ群：229487894
+  ~   ============================================================================
   -->
 <!--
  	作者：tvjojo@5viv.com
@@ -107,7 +120,17 @@ function content_5b8197ded35e81_55062269 (Smarty_Internal_Template $_smarty_tpl)
     <div class="sidebar1">
 <!DOCTYPE html>
  
-		   <ul class="nav">
+		   <!--
+  ~   ============================================================================
+  ~  Copyright (c) 2017. 本软件系统由北天团队与大视线团队共同开发，对于非商业用途
+  ~  的代码使用完全免费，而对商业用户经过我方授权后也可免费使用，但所有用户不得任意破坏
+  ~  我们设计的产品结构，也不得使用该软件做为非法用途.如果商业用户希望获得一些平台型的支
+  ~  持，以及获得我方各类接口的支持，也可联系我方购买更丰富的支持.
+  ~  ** http://bitbox.5viv.com    EMAIL:tvjojo@5viv.com   QQ群：229487894
+  ~   ============================================================================
+  -->
+
+<ul class="nav">
       <li><a href="index.php">首页</a></li>
       <li><a href="#">bitbox java版</a></li>
       <li><a href="#">bitbox C#版</a></li>
