@@ -100,10 +100,10 @@ return array(
     'DB' => array(
         'DB_TYPE' => 'mysqli', // 数据库类型，一般不需要修改
         'DB_HOST' => '1225', // 数据库主机，一般不需要修改
-        'DB_USER' => 'bitbox', // 数据库用户名
-        'DB_PWD' => 'bitbox123', // 数据库密码
+        'DB_USER' => 'b12', // 数据库用户名
+        'DB_PWD' => 'b123', // 数据库密码
         'DB_PORT' => 3306, // 数据库端口，mysql默认是3306，一般不需要修改
-        'DB_NAME' => 'bitbox', // 数据库名
+        'DB_NAME' => 'b12x', // 数据库名
         'DB_CHARSET' => 'utf8', // 数据库编码，一般不需要修改
         'DB_PREFIX' => 'box_', // 数据库前缀
         'DB_CACHE_ON' => false, // 是否开启数据库缓存，true开启，false不开启
